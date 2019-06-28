@@ -24,6 +24,7 @@
    * @prop --max-height: Maximum height of the toast
    *
    * @prop --button-color: Color of the button text
+   * @prop --line-height: Line height of the text
    *
    * @prop --start: Position from the left if direction is left-to-right, and from the right if direction is right-to-left
    * @prop --end: Position from the right if direction is left-to-right, and from the left if direction is right-to-left
@@ -37,6 +38,7 @@
   --min-height: auto;
   --height: auto;
   --max-height: auto;
+  --line-height: auto;
 
   @include position(0, null, null, 0);
 
@@ -112,6 +114,8 @@
   flex: 1;
 
   white-space: pre-wrap;
+  
+  line-height: var(--line-height);
 }
 
 .toast-button-group {
