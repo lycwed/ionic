@@ -7,6 +7,7 @@
   /**
    * @prop --background: Background of the toast
    * @prop --color: Color of the toast text
+   * @prop --line-height: Line height of the toast text
    *
    * @prop --border-color: Border color of the toast
    * @prop --border-radius: Border radius of the toast
@@ -37,6 +38,7 @@
   --min-height: auto;
   --height: auto;
   --max-height: auto;
+  --line-height: 20px;
 
   @include position(0, null, null, 0);
 
@@ -112,6 +114,8 @@
   flex: 1;
 
   white-space: pre-wrap;
+
+  line-height: var(--line-height);
 }
 
 .toast-button-group {
